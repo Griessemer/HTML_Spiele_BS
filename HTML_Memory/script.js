@@ -1,9 +1,8 @@
 const NUMBER_OF_PAIRS = 6;  // Anzahl der auszuwählenden Paare (also insgesamt 2*6 Karten)
 
 const allImages = [
-  'img/001_q.jpg', 'img/002_q.jpg', 'img/Kaernten_2024_005_q.jpg', 'img/Kaernten_2024_008_q.jpg', 'img/Kaernten_2024_012_q.jpg', 'img/Kaernten_2024_028_q.jpg', 'img/Kaernten_2024_029_q.jpg', 'img/Kaernten_2024_031_q.jpg', 'img/Kaernten_2024_032_q.jpg', 'img/Kaernten_2024_040_q.jpg', 'img/Kaernten_2024_042_q.jpg', 'img/Kaernten_2024_043_q.jpg', 'img/WhatsApp Image 2016-08-07_007_q.jpg', 'img/WhatsApp Image 2016-08-07_021_q.jpg', 'img/b92eafd2-0f43-4d6d-8e3a-4eb919956211_q.jpg'
+  'img/001_q.jpg', 'img/002_q.jpg', 'img/2007_01_q.JPG', 'img/2007_02_q.JPG', 'img/2009_01_q.JPG', 'img/2009_02_q.JPG', 'img/2009_03_q.JPG', 'img/2015_01_q.JPG', 'img/2016_01_q.jpg', 'img/2016_02_q.jpg', 'img/Kaernten_2024_005_q.jpg', 'img/Kaernten_2024_008_q.jpg', 'img/Kaernten_2024_012_q.jpg', 'img/Kaernten_2024_028_q.jpg', 'img/Kaernten_2024_029_q.jpg', 'img/Kaernten_2024_031_q.jpg', 'img/Kaernten_2024_032_q.jpg', 'img/Kaernten_2024_040_q.jpg', 'img/Kaernten_2024_042_q.jpg', 'img/Kaernten_2024_043_q.jpg', 'img/WhatsApp Image 2016-08-07_007_q.jpg', 'img/WhatsApp Image 2016-08-07_021_q.jpg', 'img/b92eafd2-0f43-4d6d-8e3a-4eb919956211_q.jpg'
 ];
-
 function getRandomImages(arr, count) {
   const shuffled = arr.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);

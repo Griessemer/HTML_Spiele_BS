@@ -46,30 +46,13 @@
       filter: drop-shadow(0 0 10px #fff);
       transform: scale(1.05);
     }
-
   </style>
 </head>
 <body>
   <h1>PRESS COW</h1>
 
-  <button id="memory-btn" aria-label="Memoryspiel starten">
+  <a id="memory-btn" href="HTML_Memory/memory.html" target="_blank" aria-label="Memoryspiel starten">
     <img src="img/memory.jpg" alt="Memoryspiel Button" />
-  </button>
-
-  <script>
-    const correctPassword = "GKlasse"; // Passwort anpassen
-    const btn = document.getElementById("memory-btn");
-
-    btn.addEventListener("click", () => {
-      const pwd = prompt("Bitte Passwort eingeben:");
-      if (pwd === null) return; // Abbruch
-
-      if (pwd === correctPassword) {
-        window.open("HTML_Memory/index.html", "_blank");
-      } else {
-        alert("Falsches Passwort!");
-      }
-    });
-  </script>
+  </a>
 </body>
 </html>

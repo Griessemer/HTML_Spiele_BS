@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>**SHARPNAIL PRESENTS**</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    #memory-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      outline: none;
+      transition: transform 0.3s ease;
+    }
+
+    #memory-btn img {
+      width: 220px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+      transition: filter 0.3s ease, transform 0.3s ease;
+    }
+
+    #memory-btn:hover img {
+      filter: drop-shadow(0 0 10px #fff);
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+  <h1>PRESS COW</h1>
+
+  <button id="memory-btn" aria-label="Memoryspiel starten">
+    <img src="img/memory.jpg" alt="Memoryspiel Button" />
+  </button>
+
+  <script>
+    const correctPassword = "GKlasse"; // Passwort anpassen
+    const btn = document.getElementById("memory-btn");
+
+    btn.addEventListener("click", () => {
+      const pwd = prompt("Bitte Passwort eingeben:");
+      if (pwd === null) return; // Abbruch
+
+      if (pwd === correctPassword) {
+        window.open("HTML_Memory/index.html", "_blank");
+      } else {
+        alert("Falsches Passwort!");
+      }
+    });
+  </script>
+</body>
+</html>
